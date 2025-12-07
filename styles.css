@@ -1,6 +1,7 @@
 /* styles.css: Custom styles for GIBES INOV - Updated for Light Theme, Typography, and Effects */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap');
+
 @view-transition {
   navigation: auto;
 }
@@ -26,14 +27,23 @@
 .bg-section-gray { background-color: var(--color-section-gray); }
 .text-text-muted { color: var(--color-text-muted); }
 
+
+
 /* Typography */
 html {
     scroll-behavior: smooth;
 }
 
 body {
+    animation: fadeIn 0.4s ease-in-out; /* Make the whole page fade in gently */
     font-family: 'Inter', sans-serif;
     background-color: var(--color-accent-light); /* Enforcing light background */
+}
+
+/* Make the whole page fade in gently */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 h1, h2, h3, h4 {
@@ -116,3 +126,4 @@ h1, h2, h3, h4 {
     text-decoration: underline;
 
 }
+
