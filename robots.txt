@@ -1,0 +1,11 @@
+# robots.txt for GIBES INOV
+User-agent: *
+Allow: /
+
+# Exclude private/staging areas
+Disallow: /admin/
+Disallow: /tmp/
+Disallow: /assets/private/
+
+# Sitemap location
+Sitemap: https://www.gibesinov.com/sitemap.xml

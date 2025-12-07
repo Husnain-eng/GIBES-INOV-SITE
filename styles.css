@@ -1,0 +1,115 @@
+/* styles.css: Custom styles for GIBES INOV - Updated for Light Theme, Typography, and Effects */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap');
+
+/* Color Palette Optimization for Light Background */
+:root {
+    --color-primary-dark: #0F172A;        /* Navy Blue (Header, Footer, Main Text) */
+    --color-action-teal: #06B6D4;         /* Electric Teal (CTA, Innovation, Success) */
+    --color-industrial-red: #EF4444;      /* Industrial Red (Risk, Urgency) */
+    --color-accent-light: #F9FAFB;        /* Near-White (Main Background) */
+    --color-section-gray: #F3F4F6;        /* Light Gray (Section Divider Background) */
+    --color-text-muted: #6B7280;          /* Subtle Gray for secondary text */
+}
+
+/* Base Utility Classes */
+.bg-primary-dark { background-color: var(--color-primary-dark); }
+.text-primary-dark { color: var(--color-primary-dark); }
+.bg-action-teal { background-color: var(--color-action-teal); }
+.text-action-teal { color: var(--color-action-teal); }
+.bg-industrial-red { background-color: var(--color-industrial-red); }
+.text-industrial-red { color: var(--color-industrial-red); }
+.bg-accent-light { background-color: var(--color-accent-light); }
+.text-accent-light { color: var(--color-accent-light); }
+.bg-section-gray { background-color: var(--color-section-gray); }
+.text-text-muted { color: var(--color-text-muted); }
+
+/* Typography */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-accent-light); /* Enforcing light background */
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Premium Motion and Effects */
+.cta-glow-pulse {
+    /* Teal Pulse for CTA */
+    animation: ctaGlow 2s infinite alternate;
+}
+@keyframes ctaGlow {
+    0% { box-shadow: 0 0 5px rgba(6, 182, 212, 0.5), 0 0 10px rgba(6, 182, 212, 0.2); }
+    100% { box-shadow: 0 0 15px rgba(6, 182, 212, 0.8), 0 0 20px rgba(6, 182, 212, 0.4); }
+}
+
+/* Radial Background for Stats Section (Contrast on Navy background) */
+.radial-stats-bg {
+    background: radial-gradient(circle at center, #1A273A 0%, var(--color-primary-dark) 100%);
+}
+
+/* Card Hover Effect (Subtle Lift and Shadow) */
+.card-hover-effect {
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+}
+
+.card-hover-effect:hover {
+    transform: translateY(-5px);
+    /* Deeper shadow for professional lift */
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.1); 
+}
+
+/* Case Study Cards - Teal border on hover */
+.case-study-card {
+    transition: border-color 0.3s, transform 0.3s;
+    border-left: 5px solid transparent;
+}
+
+.case-study-card:hover {
+    border-left-color: var(--color-action-teal);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(6, 182, 212, 0.1);
+}
+
+/* Filter Button Styles (Avanceon style) */
+.filter-button.active {
+    background-color: var(--color-action-teal);
+    color: var(--color-primary-dark);
+    font-weight: 700; /* bold */
+    box-shadow: 0 4px 10px rgba(6, 182, 212, 0.4);
+    transform: translateY(-1px);
+}
+
+/* Stylized HR divider */
+.fancy-divider {
+    height: 1px;
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%, #0F172A 50%, rgba(0,0,0,0) 100%);
+    opacity: 0.1;
+    margin: 3rem auto;
+}
+
+/* Cookie Banner Styling (Always fixed at bottom) */
+#cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Highest priority */
+    padding: 1rem;
+    background-color: var(--color-primary-dark);
+    color: var(--color-accent-light);
+    box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.4);
+    display: none; /* Controlled by JS */
+    align-items: center;
+    justify-content: space-between;
+}
+#cookie-banner a {
+    color: var(--color-action-teal);
+    text-decoration: underline;
+}

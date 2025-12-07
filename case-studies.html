@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automation Case Studies | Measurable ROI & Downtime Reduction - GIBES INOV</title>
+    <meta name="description" content="View 12+ detailed case studies showing guaranteed ROI: reduced downtime, energy savings, and compliance success for Pharma, Food, and Manufacturing clients in Pakistan and Europe.">
+    <meta name="keywords" content="Automation Case Studies, Predictive Maintenance ROI, Energy Optimization Results, Pharma Compliance Case, SCADA Retrofit Success, Industrial ROI examples">
+    <link rel="canonical" href="https://www.gibesinov.com/case-studies.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Configure Tailwind with fonts and custom colors/shadows
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Montserrat', 'sans-serif'], // Montserrat for headings
+                    },
+                    colors: {
+                        'primary-dark': '#0F172A',
+                        'action-teal': '#06B6D4', 
+                        'industrial-red': '#EF4444', 
+                        'accent-light': '#F9FAFB', 
+                        'text-muted': '#6B7280', 
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Structured Data: Breadcrumb List -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.gibesinov.com"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Case Studies",
+        "item": "https://www.gibesinov.com/case-studies.html"
+      }]
+    }
+    </script>
+</head>
+<body class="antialiased bg-accent-light text-primary-dark">
+
+    <!-- Sticky Floating Buttons -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col space-y-3">
+        <!-- CTA: Start Project/Audit (Triggers Modal) - PREMIUM GLOW EFFECT -->
+        <button id="lead-modal-trigger" class="px-6 py-3 bg-action-teal text-primary-dark font-semibold rounded-full shadow-2xl transition-all transform hover:scale-105 cta-glow-pulse">
+            Start Project / Audit
+        </button>
+        <!-- CTA: Contact Us (Trust-Building Email) -->
+        <a href="mailto:sales@gibesinov.com?subject=I%20Need%20A%20Guaranteed%20ROI%20Audit%20for%20My%20Facility&body=Dear%20GIBES%20INOV%20Team%2C%0A%0AI%20am%20contacting%20you%20to%20start%20the%20process%20of%20a%20risk-free%20audit.%20I%20trust%20your%20guaranteed%20ROI%20model%20can%20solve%20my%20biggest%20operational%20problem%20which%20is%3A%20[e.g.%2C%20Unplanned%20Downtime].%0A%0ACompany%3A%20%0AName%3A%20%0APhone%3A%20%0ARegion%3A%20" class="px-4 py-3 bg-primary-dark text-accent-light font-semibold rounded-full shadow-lg hover:bg-gray-700 transition-colors text-sm">
+            Contact Us & Start Trust
+        </a>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-40 bg-primary-dark bg-opacity-95 shadow-lg backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-extrabold font-serif text-accent-light tracking-tight">
+                <span class="text-action-teal">GIBES</span> INOV
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="services.html" class="text-gray-300 hover:text-action-teal transition-colors font-medium">Services</a>
+                <a href="case-studies.html" class="text-action-teal hover:text-action-teal transition-colors font-medium">ROI Cases</a>
+                <a href="about.html" class="text-gray-300 hover:text-action-teal transition-colors font-medium">About Us</a>
+                <a href="contact.html" class="text-gray-300 hover:text-action-teal transition-colors font-medium">Contact & Support</a>
+            </nav>
+            <a href="contact.html?type=audit" class="hidden md:inline-block px-5 py-2.5 bg-industrial-red text-accent-light font-bold rounded-lg shadow-xl hover:bg-red-600 transition-all">
+                Get a Free Audit
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-primary-dark text-accent-light py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl font-extrabold font-serif mb-4">Case Studies: Proof That Automation Pays</h1>
+            <p class="text-xl text-gray-300 max-w-4xl mx-auto">
+                Filter our proven results by industry or solution type. Every case study includes guaranteed ROI metrics and architecture details.
+            </p>
+        </div>
+    </section>
+
+    <!-- Case Studies Filters - Light Gray Background -->
+    <section id="filter-section" class="py-12 bg-section-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl font-bold font-serif mb-6 text-primary-dark">Filter By Industry or Solution</h2>
+            
+            <div id="case-study-filters" class="flex flex-wrap gap-3 pb-6 mb-8">
+                <button id="filter-all" data-filter="all" data-type="all" class="filter-button px-4 py-2 text-sm rounded-full bg-gray-200 hover:bg-action-teal hover:text-primary-dark transition-colors">Show All</button>
+
+                <div class="w-full md:w-auto mt-4 md:mt-0 pt-4 md:pt-0 border-t md:border-t-0 border-gray-200">
+                    <span class="font-semibold text-text-muted mr-3 block md:inline-block">INDUSTRY:</span>
+                    <button data-filter="Pharma" data-type="industry" class="filter-button px-4 py-2 text-sm rounded-full bg-gray-200 hover:bg-action-teal hover:text-primary-dark transition-colors">Pharma/Chemical</button>
+                    <button data-filter="Food" data-type="industry" class="filter-button px-4 py-2 text-sm rounded-full bg-gray-200 hover:bg-action-teal hover:text-primary-dark transition-colors">Food/Beverage</button>
+                    <button data-filter="Textile" data-type="industry" class="filter-button px-4 py-2 text-sm rounded-full bg-gray-200 hover:bg-action-teal hover:text-primary-dark transition-colors">Textile/Manufacturing</button>
+                    <button data-filter="R&D" data-type="industry" class="filter-button px-4 py-2 text-sm rounded-full bg-gray-200 hover:bg-action-teal hover:text-primary-dark transition-colors">R&D/Academic</button>
+                </div>
+                
+                <div class="w-full md:w-auto mt-4 pt-4 border-t border-gray-200">
+                    <span class="font-semibold text-text-muted mr-3 block md:inline-block">SOLUTION:</span>
+                    <button data-filter="Predictive" data-type="solution" class="filter-button px-4 py-2 text-sm rounded-full bg-gray-200 hover:bg-action-teal hover:text-primary-dark transition-colors">Predictive Maintenance</button>
+                    <button data-filter="Compliance" data-type="solution" class="filter-button px-4 py-2 text-sm rounded-full bg-gray-200 hover:bg-action-teal hover:text-primary-dark transition-colors">Compliance/QC</button>
+                    <button data-filter="Energy" data-type="solution" class="filter-button px-4 py-2 text-sm rounded-full bg-gray-200 hover:bg-action-teal hover:text-primary-dark transition-colors">Energy Optimization</button>
+                    <button data-filter="Embedded" data-type="solution" class="filter-button px-4 py-2 text-sm rounded-full bg-gray-200 hover:bg-action-teal hover:text-primary-dark transition-colors">Embedded/Prototyping</button>
+                </div>
+            </div>
+            
+            <!-- Case Studies Grid -->
+            <div id="case-studies-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <!-- Case Study 1: EU Pharma Packaging (Compliance) -->
+                <div id="packaging-eu" data-industry="Pharma" data-solution="Compliance" class="case-study-card p-6 bg-accent-light rounded-lg shadow-xl card-hover-effect">
+                    <span class="text-sm font-semibold text-industrial-red uppercase block mb-1">High-Compliance | Europe</span>
+                    <h3 class="text-2xl font-bold font-serif mb-3">Pharma Line Validation & Digital Batch Records</h3>
+                    <p class="text-text-muted text-sm mb-4">
+                        Problem: Manual batch recording led to critical 21 CFR Part 11 compliance risks.
+                    </p>
+                    <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700 mb-4">
+                        <li class="font-semibold text-action-teal">KPI: Compliance failure rate reduced to 0%.</li>
+                        <li>ROI: 40% faster QA/QC release cycle.</li>
+                    </ul>
+                    <a href="assets/case_study_pharma_eu.pdf" target="_blank" download class="inline-block px-4 py-2 bg-action-teal text-primary-dark font-semibold rounded-lg text-sm hover:bg-teal-500 transition-colors">
+                        <i class="fas fa-file-download mr-1"></i> Download PDF & ROI Calc
+                    </a>
+                </div>
+
+                <!-- Case Study 2: PK Textile Dyeing (Energy Optimization) -->
+                <div id="textile-pk" data-industry="Textile" data-solution="Energy" class="case-study-card p-6 bg-accent-light rounded-lg shadow-xl card-hover-effect">
+                    <span class="text-sm font-semibold text-action-teal uppercase block mb-1">Energy Saving | Pakistan</span>
+                    <h3 class="text-2xl font-bold font-serif mb-3">Textile Dyeing VAT Optimization (15% Energy Cut)</h3>
+                    <p class="text-text-muted text-sm mb-4">
+                        Problem: Inefficient steam and motor control causing high utility bills.
+                    </p>
+                    <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700 mb-4">
+                        <li class="font-semibold text-action-teal">KPI: Energy consumption reduced by 18%.</li>
+                        <li>ROI: Payback period of only 7 months.</li>
+                    </ul>
+                    <a href="assets/case_study_textile_pk.pdf" target="_blank" download class="inline-block px-4 py-2 bg-action-teal text-primary-dark font-semibold rounded-lg text-sm hover:bg-teal-500 transition-colors">
+                        <i class="fas fa-file-download mr-1"></i> Download PDF & ROI Calc
+                    </a>
+                </div>
+
+                <!-- Case Study 3: EU Food Processing (Downtime) -->
+                <div id="food-eu" data-industry="Food" data-solution="Predictive" class="case-study-card p-6 bg-accent-light rounded-lg shadow-xl card-hover-effect">
+                    <span class="text-sm font-semibold text-industrial-red uppercase block mb-1">Downtime Risk | Europe</span>
+                    <h3 class="text-2xl font-bold font-serif mb-3">Packaging Line Downtime Elimination</h3>
+                    <p class="text-text-muted text-sm mb-4">
+                        Problem: Unplanned motor failures resulting in $12,000/hr revenue leakage.
+                    </p>
+                    <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700 mb-4">
+                        <li class="font-semibold text-action-teal">KPI: Unplanned downtime reduced by 95%.</li>
+                        <li>ROI: $2.1M annual savings in production loss.</li>
+                    </ul>
+                    <a href="assets/case_study_food_eu.pdf" target="_blank" download class="inline-block px-4 py-2 bg-action-teal text-primary-dark font-semibold rounded-lg text-sm hover:bg-teal-500 transition-colors">
+                        <i class="fas fa-file-download mr-1"></i> Download PDF & ROI Calc
+                    </a>
+                </div>
+                
+                <!-- Case Study 4: PK Agriculture (Embedded R&D) -->
+                <div id="agri-pk" data-industry="R&D" data-solution="Embedded" class="case-study-card p-6 bg-accent-light rounded-lg shadow-xl card-hover-effect">
+                    <span class="text-sm font-semibold text-action-teal uppercase block mb-1">Embedded R&D | Pakistan</span>
+                    <h3 class="text-2xl font-bold font-serif mb-3">Automated Greenhouse Environmental Control</h3>
+                    <p class="text-text-muted text-sm mb-4">
+                        Problem: Researcher needed a robust, scalable multi-sensor data logging system for grant validation.
+                    </p>
+                    <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700 mb-4">
+                        <li class="font-semibold text-action-teal">KPI: Functional prototype delivered in 5 weeks.</li>
+                        <li>ROI: Secured next phase of research funding.</li>
+                    </ul>
+                    <a href="assets/case_study_agri_pk.pdf" target="_blank" download class="inline-block px-4 py-2 bg-action-teal text-primary-dark font-semibold rounded-lg text-sm hover:bg-teal-500 transition-colors">
+                        <i class="fas fa-file-download mr-1"></i> Download PDF & ROI Calc
+                    </a>
+                </div>
+                
+                <!-- Case Study 5: EU Water Treatment (SCADA/Compliance) -->
+                <div id="water-eu" data-industry="Pharma" data-solution="Compliance" class="case-study-card p-6 bg-accent-light rounded-lg shadow-xl card-hover-effect">
+                    <span class="text-sm font-semibold text-industrial-red uppercase block mb-1">Compliance/SCADA | Europe</span>
+                    <h3 class="text-2xl font-bold font-serif mb-3">Chemical Dosing Precision Retrofit</h3>
+                    <p class="text-text-muted text-sm mb-4">
+                        Problem: Aging SCADA resulted in inconsistent chemical dosing and high waste.
+                    </p>
+                    <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700 mb-4">
+                        <li class="font-semibold text-action-teal">KPI: Dosing accuracy improved to < 0.5% tolerance.</li>
+                        <li>ROI: 35% reduction in chemical consumption.</li>
+                    </ul>
+                    <a href="assets/case_study_water_eu.pdf" target="_blank" download class="inline-block px-4 py-2 bg-action-teal text-primary-dark font-semibold rounded-lg text-sm hover:bg-teal-500 transition-colors">
+                        <i class="fas fa-file-download mr-1"></i> Download PDF & ROI Calc
+                    </a>
+                </div>
+
+                <!-- Case Study 6: PK Logistics (Quality Control) -->
+                <div id="logistics-pk" data-industry="Manufacturing" data-solution="Compliance" class="case-study-card p-6 bg-accent-light rounded-lg shadow-xl card-hover-effect">
+                    <span class="text-sm font-semibold text-industrial-red uppercase block mb-1">Quality Control | Pakistan</span>
+                    <h3 class="text-2xl font-bold font-serif mb-3">Warehouse Pallet Dimension Verification</h3>
+                    <p class="text-text-muted text-sm mb-4">
+                        Problem: Manual QC check missed improperly sized pallets, leading to logistics fines.
+                    </p>
+                    <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700 mb-4">
+                        <li class="font-semibold text-action-teal">KPI: Zero pallet rejection fines in 12 months.</li>
+                        <li>ROI: $50,000 saved annually in penalty fees.</li>
+                    </ul>
+                    <a href="assets/case_study_logistics_pk.pdf" target="_blank" download class="inline-block px-4 py-2 bg-action-teal text-primary-dark font-semibold rounded-lg text-sm hover:bg-teal-500 transition-colors">
+                        <i class="fas fa-file-download mr-1"></i> Download PDF & ROI Calc
+                    </a>
+                </div>
+
+                <!-- Case Study 7: EU Machine Tools (Predictive) -->
+                <div id="cnc-eu" data-industry="Manufacturing" data-solution="Predictive" class="case-study-card p-6 bg-accent-light rounded-lg shadow-xl card-hover-effect">
+                    <span class="text-sm font-semibold text-industrial-red uppercase block mb-1">Downtime Risk | Europe</span>
+                    <h3 class="text-2xl font-bold font-serif mb-3">CNC Spindle Health Monitoring</h3>
+                    <p class="text-text-muted text-sm mb-4">
+                        Problem: Unexpected bearing failure on high-cost CNC spindles causing multi-day downtime.
+                    </p>
+                    <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700 mb-4">
+                        <li class="font-semibold text-action-teal">KPI: Maintenance lead time changed from 0 to 45 days.</li>
+                        <li>ROI: 75% reduction in emergency maintenance costs.</li>
+                    </ul>
+                    <a href="assets/case_study_cnc_eu.pdf" target="_blank" download class="inline-block px-4 py-2 bg-action-teal text-primary-dark font-semibold rounded-lg text-sm hover:bg-teal-500 transition-colors">
+                        <i class="fas fa-file-download mr-1"></i> Download PDF & ROI Calc
+                    </a>
+                </div>
+
+                <!-- Case Study 8: PK Solar/BESS (Embedded R&D) -->
+                <div id="solar-pk" data-industry="R&D" data-solution="Embedded" class="case-study-card p-6 bg-accent-light rounded-lg shadow-xl card-hover-effect">
+                    <span class="text-sm font-semibold text-action-teal uppercase block mb-1">Embedded R&D | Pakistan</span>
+                    <h3 class="text-2xl font-bold font-serif mb-3">Off-Grid Battery Energy Storage System (BESS)</h3>
+                    <p class="text-text-muted text-sm mb-4">
+                        Problem: Startup needed a robust, high-current BMS prototype for commercialization.
+                    </p>
+                    <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700 mb-4">
+                        <li class="font-semibold text-action-teal">KPI: Prototype passed all thermal and stress tests.</li>
+                        <li>ROI: 4-month development cycle reduced to 2 months.</li>
+                    </ul>
+                    <a href="assets/case_study_solar_pk.pdf" target="_blank" download class="inline-block px-4 py-2 bg-action-teal text-primary-dark font-semibold rounded-lg text-sm hover:bg-teal-500 transition-colors">
+                        <i class="fas fa-file-download mr-1"></i> Download PDF & ROI Calc
+                    </a>
+                </div>
+
+                <!-- Case Study 9: EU Chemical Dosing (Compliance) -->
+                <div id="chemical-eu" data-industry="Pharma" data-solution="Compliance" class="case-study-card p-6 bg-accent-light rounded-lg shadow-xl card-hover-effect">
+                    <span class="text-sm font-semibold text-industrial-red uppercase block mb-1">High-Compliance | Europe</span>
+                    <h3 class="text-2xl font-bold font-serif mb-3">Chemical Dosing Safety & Auditing</h3>
+                    <p class="text-text-muted text-sm mb-4">
+                        Problem: Legacy system with no verifiable safety interlocks or auditable records.
+                    </p>
+                    <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700 mb-4">
+                        <li class="font-semibold text-action-teal">KPI: Achieved SIL 2 safety rating.</li>
+                        <li>ROI: Prevented 1 major safety incident (estimated $500k loss).</li>
+                    </ul>
+                    <a href="assets/case_study_chemical_eu.pdf" target="_blank" download class="inline-block px-4 py-2 bg-action-teal text-primary-dark font-semibold rounded-lg text-sm hover:bg-teal-500 transition-colors">
+                        <i class="fas fa-file-download mr-1"></i> Download PDF & ROI Calc
+                    </a>
+                </div>
+
+                <!-- Case Study 10: PK Food Processing (Quality) -->
+                <div id="food-pk" data-industry="Food" data-solution="Compliance" class="case-study-card p-6 bg-accent-light rounded-lg shadow-xl card-hover-effect">
+                    <span class="text-sm font-semibold text-industrial-red uppercase block mb-1">Quality Control | Pakistan</span>
+                    <h3 class="text-2xl font-bold font-serif mb-3">Inconsistent Product Weight & Packaging</h3>
+                    <p class="text-text-muted text-sm mb-4">
+                        Problem: High variance in final product weight leading to material giveaway.
+                    </p>
+                    <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700 mb-4">
+                        <li class="font-semibold text-action-teal">KPI: Variance reduced by 80%.</li>
+                        <li>ROI: $150,000 saved annually in material giveaway.</li>
+                    </ul>
+                    <a href="assets/case_study_food_pk.pdf" target="_blank" download class="inline-block px-4 py-2 bg-action-teal text-primary-dark font-semibold rounded-lg text-sm hover:bg-teal-500 transition-colors">
+                        <i class="fas fa-file-download mr-1"></i> Download PDF & ROI Calc
+                    </a>
+                </div>
+
+                <!-- Case Study 11: EU Manufacturing (Energy/Predictive) -->
+                <div id="manufac-eu" data-industry="Manufacturing" data-solution="Energy" class="case-study-card p-6 bg-accent-light rounded-lg shadow-xl card-hover-effect">
+                    <span class="text-sm font-semibold text-action-teal uppercase block mb-1">Energy & Predictive | Europe</span>
+                    <h3 class="text-2xl font-bold font-serif mb-3">Compressor Fleet Optimization & Health Monitoring</h3>
+                    <p class="text-text-muted text-sm mb-4">
+                        Problem: Inefficient scheduling and unexpected failure of critical air compressors.
+                    </p>
+                    <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700 mb-4">
+                        <li class="font-semibold text-action-teal">KPI: Compressor energy use down by 22%.</li>
+                        <li>ROI: $450k savings in Year 1 from efficiency and zero downtime.</li>
+                    </ul>
+                    <a href="assets/case_study_manufac_eu.pdf" target="_blank" download class="inline-block px-4 py-2 bg-action-teal text-primary-dark font-semibold rounded-lg text-sm hover:bg-teal-500 transition-colors">
+                        <i class="fas fa-file-download mr-1"></i> Download PDF & ROI Calc
+                    </a>
+                </div>
+
+                <!-- Case Study 12: PK Educational (Low Cost R&D) -->
+                <div id="edu-pk" data-industry="R&D" data-solution="Embedded" class="case-study-card p-6 bg-accent-light rounded-lg shadow-xl card-hover-effect">
+                    <span class="text-sm font-semibold text-action-teal uppercase block mb-1">R&D / Education | Pakistan</span>
+                    <h3 class="text-2xl font-bold font-serif mb-3">Low-Cost Smart Home Automation Project</h3>
+                    <p class="text-text-muted text-sm mb-4">
+                        Problem: University team needed a reliable, cost-optimized system for an engineering contest.
+                    </p>
+                    <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700 mb-4">
+                        <li class="font-semibold text-action-teal">KPI: Won 1st place in the Mechatronics category.</li>
+                        <li>ROI: Full documentation and clean code for future research.</li>
+                    </ul>
+                    <a href="assets/case_study_edu_pk.pdf" target="_blank" download class="inline-block px-4 py-2 bg-action-teal text-primary-dark font-semibold rounded-lg text-sm hover:bg-teal-500 transition-colors">
+                        <i class="fas fa-file-download mr-1"></i> Download PDF & ROI Calc
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Final CTA below case studies -->
+            <div class="text-center mt-16 p-8 bg-section-gray rounded-xl shadow-inner">
+                <h2 class="text-3xl font-bold font-serif mb-4">Ready for Your Guaranteed ROI?</h2>
+                <p class="text-xl text-text-muted mb-6">
+                    See how we can apply these proven results to your specific operational challenges.
+                </p>
+                <a href="contact.html?type=audit" class="inline-block px-10 py-3 bg-action-teal text-primary-dark font-bold rounded-lg shadow-xl hover:bg-teal-500 transition-colors">
+                    Schedule Your Free Audit
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-dark py-12 text-gray-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-5 gap-8">
+            <div>
+                <h5 class="text-accent-light font-bold mb-4">Services</h5>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="services.html#predictive" class="hover:text-action-teal">Predictive Maintenance</a></li>
+                    <li><a href="services.html#embedded" class="hover:text-action-teal">Embedded R&D</a></li>
+                    <li><a href="services.html#scada" class="hover:text-action-teal">SCADA & Retrofit</a></li>
+                    <li><a href="services.html#energy" class="hover:text-action-teal">Energy Optimization</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-accent-light font-bold mb-4">Industries</h5>
+                <ul class="space-y-2 text-sm">
+                    <li>Pharma & Biotech (EU Focus)</li>
+                    <li>Food & Beverage (PK/EU)</li>
+                    <li>Textiles & Chemical (PK Focus)</li>
+                    <li>Manufacturing & Logistics</li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-accent-light font-bold mb-4">Company</h5>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="about.html#mission" class="hover:text-action-teal">Our Mission</a></li>
+                    <li><a href="case-studies.html" class="hover:text-action-teal">ROI Case Studies</a></li>
+                    <li><a href="about.html#careers" class="hover:text-action-teal">Careers</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-accent-light font-bold mb-4">Compliance</h5>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="privacy-policy.html" class="hover:text-action-teal">Privacy Policy (GDPR/PK)</a></li>
+                    <li><a href="about.html#terms" class="hover:text-action-teal">Terms of Service</a></li>
+                    <li><a href="about.html#certifications" class="hover:text-action-teal">ISO/CE Certifications</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-accent-light font-bold mb-4">Contact</h5>
+                <p class="text-sm">Email: <a href="mailto:sales@gibesinov.com" class="hover:text-action-teal">sales@gibesinov.com</a></p>
+                <p class="text-sm">PK/EU Phone: <a href="tel:+923253000814" class="hover:text-action-teal">+92 325 3000814</a></p>
+                <div class="flex space-x-4 mt-3 text-lg">
+                    <a href="https://linkedin.com/company/gibesinov" target="_blank" class="text-gray-400 hover:text-action-teal transition-colors">in</a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-8 pt-6 border-t border-gray-700 text-center text-xs text-gray-500">
+            © 2024 GIBES INOV. All Rights Reserved. <a href="#" id="cookie-settings" class="hover:text-action-teal underline">Cookie Settings</a>.
+        </div>
+    </footer>
+    
+    <!-- Lead Capture Modal (Must be present on all pages using scripts.js) -->
+    <div id="lead-modal" class="fixed inset-0 bg-primary-dark bg-opacity-70 z-50 hidden items-center justify-center p-4">
+        <div class="bg-white rounded-xl shadow-2xl p-8 max-w-lg w-full relative">
+            <button id="close-modal" class="absolute top-4 right-4 text-gray-500 hover:text-primary-dark text-xl font-bold">×</button>
+            <h3 class="text-2xl font-bold font-serif text-action-teal mb-4">Start Your ROI Guaranteed Project</h3>
+            <p class="text-text-muted mb-6">Tell us about your biggest problem—downtime, energy cost, or compliance risk. We'll start the diagnostic audit.</p>
+            <form id="lead-capture-form">
+                <div class="grid grid-cols-2 gap-4 mb-4">
+                    <input type="text" name="name" placeholder="Your Name" required class="p-3 border border-gray-300 rounded-lg">
+                    <input type="text" name="company" placeholder="Company Name" required class="p-3 border border-gray-300 rounded-lg">
+                </div>
+                <div class="grid grid-cols-2 gap-4 mb-4">
+                    <input type="email" name="email" placeholder="Work Email" required class="p-3 border border-gray-300 rounded-lg">
+                    <input type="tel" name="phone" placeholder="Phone (Include Country Code)" required class="p-3 border border-gray-300 rounded-lg">
+                </div>
+                <select name="region" required class="p-3 border border-gray-300 rounded-lg w-full mb-4 bg-white">
+                    <option value="">Select Region</option>
+                    <option value="EU">Europe (GDPR Applies)</option>
+                    <option value="PK">Pakistan</option>
+                    <option value="Other">Other</option>
+                </select>
+                <select name="problem" required class="p-3 border border-gray-300 rounded-lg w-full mb-6 bg-white">
+                    <option value="">Quick Problem Selector</option>
+                    <option value="Downtime">Unplanned Downtime / Equipment Failure</option>
+                    <option value="Energy">High Energy Consumption / Waste</option>
+                    <option value="Compliance">Regulatory Risk / Audit Prep</option>
+                    <option value="Prototype">New Prototype / Embedded R&D</option>
+                </select>
+                <div class="flex items-start mb-6">
+                    <input type="checkbox" id="consent" name="consent" required class="mt-1">
+                    <label for="consent" class="ml-2 text-sm text-text-muted">I consent to receiving communication and agree to the <a href="privacy-policy.html" class="text-action-teal underline">Privacy Policy</a>.</label>
+                </div>
+                <button type="submit" class="w-full px-4 py-3 bg-action-teal text-primary-dark font-bold rounded-lg hover:bg-teal-500 transition-colors">
+                    Submit & Start Audit
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
